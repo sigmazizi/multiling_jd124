@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sigmazizi-multiling_jd124"
+version = "0.1.0"
+description = "按段落统计多语言模型工程师·合成数据的质量分水岭相关的长度分布，标出过长、过短与重复表达的部分"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "sigmazizi" }]
+keywords = ["ai", "llm", "cli", "analysis"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://sigmazizi.github.io"
+Repository = "https://github.com/sigmazizi/multiling_jd124"
+Issues = "https://github.com/sigmazizi/multiling_jd124/issues"
+
+[project.scripts]
+multiling_jd124 = "multiling_jd124:main"
+
+[tool.setuptools]
+py-modules = ["multiling_jd124"]
